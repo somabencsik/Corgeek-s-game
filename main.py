@@ -164,7 +164,4 @@ for course in coursesName:
     # Just close the websites pop up window
     browser.find_element_by_xpath('//*[@title="close"]').click()
 
-#TODO: Wirte the courses names beofre the appointments
-
-
-#browser.
+#TODO: Wirte the courses names beofre the appointments and into a text file
