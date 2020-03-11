@@ -1,0 +1,230 @@
+Adatelemzés Pythonban
+*
+Kotlin programozás
+SZE:14:00-16:00  (I.fsz.I2   (I.fsz.I2))
+*
+Robotika
+*
+Felhasználói interfészek tervezése
+K:10:00-12:00
+*
+Adatbányászat
+K:08:00-11:00  (I.fsz.I3   (I.fsz.I3))
+*
+Linux rendszergazdai ismeretek II.
+*
+Bevezetés a lágy számítás módszereibe
+CS:12:00-13:00  (I.fsz.I3   (I.fsz.I3))
+CS:13:00-14:00  (I.fsz.I3   (I.fsz.I3))
+*
+Linux rendszergazdai ismeretek I.
+H:11:00-13:00  (I.3.318   (CISCO labor)   (I.3.318))
+*
+Programozási nyelvek
+SZE:08:00-10:00  (I.1.I104   (I.1.I104))
+SZE:10:00-11:00  (I.1.I104   (I.1.I104))
+*
+Folyamatbányászat
+SZE:11:00-12:00  (I.fsz.I2   (I.fsz.I2))
+*
+Matematikai programcsomagok
+K:14:00-15:00  (I.fsz.I2   (I.fsz.I2))
+K:15:00-16:00  (I.fsz.I2   (I.fsz.I2))
+H:12:00-13:00  (I.fsz.I2   (I.fsz.I2))
+H:13:00-14:00  (I.fsz.I2   (I.fsz.I2))
+*
+Adattárház technológiák
+H:10:00-12:00  (I.fsz.PC0   (I.fsz.PC0))
+H:12:00-14:00
+*
+Szoftverfejlesztés Qt keretrendszerrel
+*
+Virtualizációs technológiák a gyakorlatban
+SZE:08:00-11:00  (I.3.317   (I.3.317 ))
+*
+Gyártásoptimalizálás
+SZE:09:00-10:00  (I.fsz.I1   (I.fsz.I1))
+SZE:10:00-12:00  (I.fsz.PC0   (I.fsz.PC0))
+*
+Egészségügyi informatika
+*
+Döntéstámogatás
+*
+Autóipari szoftver- és hardverfejlesztés a gyakorlatban II. (Continental)
+H:14:00-18:00  (I.4.417   (I.4.417),  I.fsz.I3   (I.fsz.I3))
+*
+Egységes kommunikáció
+H:11:00-13:00  (I.fsz.I1   (I.fsz.I1))
+H:13:00-14:00  (I.3.318   (CISCO labor)   (I.3.318))
+*
+Az információ vizuális megjelenítésének és mérésének alapjai
+CS:10:00-11:00  (I.fsz.I2   (I.fsz.I2))
+*
+Számítógép hálózatok II. 
+SZE:08:00-12:00  (I.3.318   (CISCO labor)   (I.3.318))
+*
+Robotika labor
+K:14:00-18:00  (I.4.410   (I.4.410))
+*
+Matematikai alapozó
+*
+Matematikai analízis I.
+P:10:00-12:00  (A.AL.A01   (A.AL.A01))
+K:08:00-10:00  (I.4.415   (I.4.415))
+*
+Programozás I.
+*
+Testnevelés I. 
+*
+Lineáris algebra 
+*
+Az informatika logikai és algebrai alapjai
+*
+Angol nyelv II. (4 óra)
+K:14:00-16:00  (N.1.N102   (N.1.N102)); SZE:08:00-10:00  (N.1.N114   (N.1.N114))
+SZE:14:00-16:00  (N.1.N116   (N.1.N116)); CS:16:00-18:00  (N.1.N115   (N.1.N115))
+SZE:12:00-14:00  (B.2.B203   (B.2.B203)); CS:14:00-16:00  (N.1.N115   (N.1.N115))
+H:14:00-16:00  (N.1.N114   (N.1.N114)); CS:14:00-16:00  (N.1.N114   (N.1.N114))
+H:12:00-14:00  (N.1.N114   (N.1.N114)); SZE:08:00-10:00  (N.1.N115   (N.1.N115))
+*
+Adatstruktúrák és algoritmusok I
+SZE:12:00-13:00  (B.2.B206   (B.2.B206))
+SZE:10:00-12:00  (A.fsz.A2   (A.fsz.A2))
+SZE:13:00-14:00  (B.2.B206   (B.2.B206))
+H:10:00-11:00  (I.fsz.I1   (I.fsz.I1))
+*
+Számítógép -architektúrák
+K:10:00-13:00  (A.fsz.A1   (A.fsz.A1))
+*
+Matematikai analízis II. 
+K:08:00-10:00  (A.fsz.A2   (A.fsz.A2))
+SZE:16:00-18:00  (B.2.B205   (B.2.B205))
+H:12:00-14:00  (B.2.B204   (B.2.B204))
+SZE:08:00-10:00  (B.2.B205   (B.2.B205))
+CS:14:00-16:00  (B.2.B204   (B.2.B204))
+H:16:00-18:00  (B.2.B204   (B.2.B204))
+SZE:16:00-18:00  (B.2.B204   (B.2.B204))
+SZE:08:00-10:00  (B.2.B204   (B.2.B204))
+*
+Angol nyelvi kollokviumi vizsga
+*
+Programozás II. (C++)
+H:12:00-14:00  (I.fsz.PC0   (I.fsz.PC0))
+H:18:00-20:00  (I.fsz.PC0   (I.fsz.PC0))
+K:17:00-19:00  (I.fsz.I2   (I.fsz.I2))
+H:12:00-14:00  (I.fsz.PC0   (I.fsz.PC0))
+CS:10:00-12:00  (A.fsz.A2   (A.fsz.A2))
+H:18:00-20:00  (I.fsz.PC0   (I.fsz.PC0))
+H:12:00-14:00  (I.fsz.I3   (I.fsz.I3))
+*
+Web programozás II.
+CS:12:00-14:00  (I.fsz.PC0   (I.fsz.PC0))
+CS:16:00-18:00  (I.fsz.PC0   (I.fsz.PC0))
+SZE:08:00-10:00  (I.fsz.PC0   (I.fsz.PC0))
+SZE:18:00-20:00  (I.fsz.PC0   (I.fsz.PC0))
+CS:14:00-16:00  (I.fsz.PC0   (I.fsz.PC0))
+*
+Diszkrét matematika 
+SZE:13:00-14:00  (B.2.B204   (B.2.B204))
+K:16:00-17:00  (B.2.B204   (B.2.B204))
+H:13:00-14:00  (B.2.B203   (B.2.B203))
+K:15:00-16:00  (B.2.B205   (B.2.B205))
+K:13:00-15:00  (A.fsz.A1   (A.fsz.A1))
+K:15:00-16:00  (B.2.B204   (B.2.B204))
+SZE:15:00-16:00  (B.2.B205   (B.2.B205))
+SZE:14:00-15:00  (B.2.B205   (B.2.B205))
+*
+Operációkutatás 
+CS:12:00-14:00  (B.2.B204   (B.2.B204))
+CS:08:00-10:00  (A.fsz.A2   (A.fsz.A2))
+SZE:14:00-16:00  (B.2.B204   (B.2.B204))
+CS:16:00-18:00  (B.2.B204   (B.2.B204))
+CS:12:00-14:00  (I.4.415   (I.4.415))
+*
+Iparjogvédelem és innovációmenedzsment
+*
+A digitális számítás elmélete
+*
+Testnevelés II. 
+*
+Angol nyelvi záróvizsga
+*
+Testnevelés III. 
+*
+Számítógép hálózatok I.
+SZE:16:00-19:00  (I.3.318   (CISCO labor)   (I.3.318))
+SZE:12:00-15:00  (I.3.318   (CISCO labor)   (I.3.318))
+H:08:00-09:00  (I.fsz.I1   (I.fsz.I1))
+*
+Adatbázis-kezelõ rendszerek I.
+*
+Java programozás I.
+*
+Valószínûségszámítás és matematikai statisztika 
+K:08:00-10:00  (B.2.B204   (B.2.B204))
+H:14:00-16:00  (I.4.416   (I.4.416))
+H:16:00-18:00  (I.fsz.I1   (I.fsz.I1))
+H:12:00-14:00  (I.4.414   (I.4.414))
+H:08:00-10:00
+H:12:00-14:00  (I.4.416   (I.4.416))
+H:10:00-12:00  (A.fsz.A2   (A.fsz.A2))
+*
+Korszerû programozási technikák
+*
+Szoftvermodellezés és tesztelés
+*
+Mesterséges intelligencia alapjai
+SZE:12:00-13:00  (A.AL.A01   (A.AL.A01))
+SZE:13:00-14:00  (A.AL.A01   (A.AL.A01))
+*
+Operációs rendszerek
+CS:16:00-18:00  (A.fsz.A1   (A.fsz.A1))
+CS:14:00-16:00  (A.fsz.A1   (A.fsz.A1))
+*
+Angol nyelv IV. (4 óra)
+K:08:00-10:00  (M.3.M332   (M.3.M332)); CS:10:00-12:00  (B.2.B205   (B.2.B205))
+*
+Testnevelés IV.
+H:12:00-14:00
+*
+Párhuzamos programozás
+*
+Adatbáziskezelõ rendszerek II
+K:12:00-14:00  (I.fsz.I2   (I.fsz.I2))
+SZE:08:00-10:00  (I.fsz.I3   (I.fsz.I3))
+CS:08:00-10:00  (I.fsz.I2   (I.fsz.I2))
+H:08:00-10:00  (I.fsz.PC0   (I.fsz.PC0))
+K:10:00-12:00  (I.fsz.I2   (I.fsz.I2))
+*
+Szoftverfejlesztés
+SZE:17:00-20:00  (I.4.417   (I.4.417))
+K:14:00-17:00  (I.fsz.I3   (I.fsz.I3))
+SZE:10:00-13:00  (I.4.417   (I.4.417))
+*
+Informatikai biztonság (angol nyelven)
+K:12:00-16:00  (I.3.318   (CISCO labor)   (I.3.318))
+K:08:00-12:00  (I.3.318   (CISCO labor)   (I.3.318))
+*
+Numerikus módszerek
+H:16:00-17:00  (A.fsz.A1   (A.fsz.A1))
+H:14:00-16:00  (A.fsz.A1   (A.fsz.A1))
+SZE:12:00-14:00  (I.fsz.PC0   (I.fsz.PC0))
+SZE:10:00-12:00  (I.fsz.I3   (I.fsz.I3))
+SZE:10:00-12:00  (I.fsz.I3   (I.fsz.I3))
+SZE:12:00-14:00  (I.fsz.PC0   (I.fsz.PC0))
+*
+Korszerû adatbázis technológiák
+*
+Tervezés I.
+*
+Haladó informatikai algoritmusok
+CS:08:00-09:00  (I.fsz.I1   (I.fsz.I1))
+CS:09:00-10:00  (I.fsz.I1   (I.fsz.I1))
+*
+A rendszerfejlesztés korszerû módszerei
+SZE:14:00-16:00  (I.fsz.I1   (I.fsz.I1))
+SZE:14:00-16:00  (I.4.415   (I.4.415))
+SZE:12:00-14:00  (I.fsz.I1   (I.fsz.I1))
+*
+Tervezés II.
+*

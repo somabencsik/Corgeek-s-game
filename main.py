@@ -14,7 +14,7 @@ from openpyxl import Workbook
 import os
 
 # Select the driver for the browser
-browser = webdriver.Opera(executable_path="/home/corgeek/Letöltések/operadriver_linux64/operadriver")
+browser = webdriver.Opera(executable_path="operadriver.exe")
 # Actions to 'move' a virtual mouse
 action = ActionChains(browser)
 
@@ -70,7 +70,7 @@ time.sleep(5)
 browser.find_element_by_id('h_addsubjects_gridSubjects_imexcel').click()
 
 # Wait for download the file
-path = os.path.join(os.path.expanduser('~'), 'Letöltések', 'export.xlsx')
+path = 'C:\\Users\\somabencsik\\Downloads\\export.xlsx'
 
 # Load - wait for it
 time.sleep(5)
@@ -100,7 +100,7 @@ while True:
 
 # Just make an xml for all the times
 workbook = Workbook()
-workbook.save(os.path.join(os.path.expanduser('~'), 'collected.xlsx'))
+workbook.save('collected.xlsx')
 
 # Will be needed for the colums, incemented after courses
 collectedCounter = 1
@@ -118,7 +118,7 @@ for course in coursesName:
     time.sleep(1)
 
     # Here i set the path of collection of times - the final one
-    path = os.path.join(os.path.expanduser('~'), 'Letöltések', 'export (1).xlsx')
+    path = 'C:\\Users\\somabencsik\\Downloads\\export (1).xlsx'
 
     # Open here
     exported = openpyxl.load_workbook(path)
@@ -144,19 +144,24 @@ for course in coursesName:
     os.remove(path)
 
     # Open the collection, for putting everything from the times list into it
-    collected = openpyxl.load_workbook(os.path.join(os.path.expanduser('~'), 'collected.xlsx'))
+    collected = openpyxl.load_workbook('collected.xlsx')
     sheet = collected.active
 
     rows = 1
 
+    sheet.cell(row = rows, column = collectedCounter).value = str(course)
+    collected.save('collected.xlsx')
+
+    rows += 1
+
     for t in times:
         actuallCell = sheet.cell(row = rows, column = collectedCounter).value = t
         # Save after every insertion
-        collected.save(os.path.join(os.path.expanduser('~'), 'collected.xlsx'))
+        collected.save('collected.xlsx')
         rows = rows + 1
 
     # You can't be sure enough
-    collected.save(os.path.join(os.path.expanduser('~'), 'collected.xlsx'))
+    collected.save('collected.xlsx')
 
     # Next courses' times go to other column
     collectedCounter = collectedCounter + 1
@@ -164,4 +169,30 @@ for course in coursesName:
     # Just close the websites pop up window
     browser.find_element_by_xpath('//*[@title="close"]').click()
 
-#TODO: Wirte the courses names beofre the appointments and into a text file
+path = 'C:\\Users\\somabencsik\\Downloads\\export.xlsx'
+os.remove(path)
+
+collected = openpyxl.load_workbook('collected.xlsx')
+sheet = collected.active
+
+f = open("allCourse.txt", "r")
+
+columnCounter = 1
+for i in range(len(coursesName)):
+    counter = 1
+
+    # Puts all the times of the courses
+    while True:
+        actualCell = sheet[column + str(counter)].value
+        if(actualCell != None):
+            f.write(actualCell + "\n")
+        else:
+            f.write("\n")
+        counter = counter + 1
+
+    f.write("*")
+
+    columnCounter += 1
+    
+f.close()
+
