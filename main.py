@@ -13,6 +13,7 @@ from openpyxl import Workbook
 # making a path for the files
 import os
 
+
 # Select the driver for the browser
 browser = webdriver.Opera(executable_path="operadriver.exe")
 # Actions to 'move' a virtual mouse
@@ -70,7 +71,7 @@ time.sleep(5)
 browser.find_element_by_id('h_addsubjects_gridSubjects_imexcel').click()
 
 # Wait for download the file
-path = 'C:\\Users\\somabencsik\\Downloads\\export.xlsx'
+path = 'C:\\Users\\soma\\Downloads\export.xlsx'
 
 # Load - wait for it
 time.sleep(5)
@@ -102,7 +103,7 @@ while True:
 workbook = Workbook()
 workbook.save('collected.xlsx')
 
-# Will be needed for the colums, incemented after courses
+# Will be needed for the colums, incremented after courses
 collectedCounter = 1
 
 # This opens all the courses by it's name, then save them
@@ -118,7 +119,7 @@ for course in coursesName:
     time.sleep(1)
 
     # Here i set the path of collection of times - the final one
-    path = 'C:\\Users\\somabencsik\\Downloads\\export (1).xlsx'
+    path = "C:\\Users\\soma\\Downloads\\export (1).xlsx"
 
     # Open here
     exported = openpyxl.load_workbook(path)
@@ -134,10 +135,22 @@ for course in coursesName:
     # Puts all the times of the courses
     while True:
         actualCell = sheet[column + str(counter)].value
-        #print(sheet[column + str(counter)].value)
         if(actualCell == None):
             break
         times.append(actualCell)
+        counter = counter + 1
+
+    typeO = []
+
+    # The courses type will be put in the typeO list
+    column = "B"
+    counter = 2
+
+    while True:
+        actualCell = sheet[column + str(counter)].value
+        if(actualCell == None):
+            break
+        typeO.append(actualCell)
         counter = counter + 1
 
     # Remove the excel file, for better disk usage
@@ -154,8 +167,10 @@ for course in coursesName:
 
     rows += 1
 
-    for t in times:
-        actuallCell = sheet.cell(row = rows, column = collectedCounter).value = t
+    for i in range(0, len(times)):
+        if(times[i] != ""):
+            actuallCell = sheet.cell(row = rows, column = collectedCounter).value = times[i] + "?" + typeO[i]
+            
         # Save after every insertion
         collected.save('collected.xlsx')
         rows = rows + 1
@@ -169,25 +184,26 @@ for course in coursesName:
     # Just close the websites pop up window
     browser.find_element_by_xpath('//*[@title="close"]').click()
 
-path = 'C:\\Users\\somabencsik\\Downloads\\export.xlsx'
+path = "C:\\Users\\soma\\Downloads\\export.xlsx"
 os.remove(path)
 
 collected = openpyxl.load_workbook('collected.xlsx')
 sheet = collected.active
 
-f = open("allCourse.txt", "r")
+f = open("allCourse.txt", "w")
 
 columnCounter = 1
-for i in range(len(coursesName)):
+for i in range(0, len(coursesName)):
     counter = 1
 
     # Puts all the times of the courses
     while True:
-        actualCell = sheet[column + str(counter)].value
+        actualCell = sheet.cell(row = counter, column = columnCounter).value
         if(actualCell != None):
             f.write(actualCell + "\n")
         else:
             f.write("\n")
+            break
         counter = counter + 1
 
     f.write("*")
