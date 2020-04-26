@@ -202,11 +202,10 @@ for i in range(0, len(coursesName)):
         if(actualCell != None):
             f.write(actualCell + "\n")
         else:
-            f.write("\n")
             break
         counter = counter + 1
 
-    f.write("*")
+    f.write("*\n")
 
     columnCounter += 1
     
