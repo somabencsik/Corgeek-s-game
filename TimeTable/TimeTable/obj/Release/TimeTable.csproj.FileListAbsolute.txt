@@ -1,0 +1,10 @@
+D:\2019-20-2\Szoftverfejlesztés\Projekt\TimeTable\TimeTable\bin\Release\TimeTable.exe.config
+D:\2019-20-2\Szoftverfejlesztés\Projekt\TimeTable\TimeTable\bin\Release\TimeTable.exe
+D:\2019-20-2\Szoftverfejlesztés\Projekt\TimeTable\TimeTable\bin\Release\TimeTable.pdb
+D:\2019-20-2\Szoftverfejlesztés\Projekt\TimeTable\TimeTable\obj\Release\TimeTable.csprojAssemblyReference.cache
+D:\2019-20-2\Szoftverfejlesztés\Projekt\TimeTable\TimeTable\obj\Release\TimeTable.Form1.resources
+D:\2019-20-2\Szoftverfejlesztés\Projekt\TimeTable\TimeTable\obj\Release\TimeTable.Orarend.resources
+D:\2019-20-2\Szoftverfejlesztés\Projekt\TimeTable\TimeTable\obj\Release\TimeTable.Properties.Resources.resources
+D:\2019-20-2\Szoftverfejlesztés\Projekt\TimeTable\TimeTable\obj\Release\TimeTable.csproj.GenerateResource.cache
+D:\2019-20-2\Szoftverfejlesztés\Projekt\TimeTable\TimeTable\obj\Release\TimeTable.exe
+D:\2019-20-2\Szoftverfejlesztés\Projekt\TimeTable\TimeTable\obj\Release\TimeTable.pdb
