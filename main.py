@@ -15,7 +15,7 @@ import os
 
 
 # Select the driver for the browser
-browser = webdriver.Opera(executable_path="operadriver.exe")
+browser = webdriver.Chrome(executable_path="/home/somabencsik/Documents/Corgeek-s-game/chromedriver")
 # Actions to 'move' a virtual mouse
 action = ActionChains(browser)
 
@@ -33,7 +33,7 @@ password.send_keys(getpass("Kérem a neptun jelszót: "))
 loginBtn.click()
 
 # Wait for the neptun to log in
-time.sleep(4)
+time.sleep(5)
 
 # This lines search for the courses site
 targyakMenu = browser.find_element_by_id('mb1_Targyak')
@@ -71,7 +71,7 @@ time.sleep(5)
 browser.find_element_by_id('h_addsubjects_gridSubjects_imexcel').click()
 
 # Wait for download the file
-path = 'C:\\Users\\soma\\Downloads\export.xlsx'
+path = '/home/somabencsik/Downloads/export.xlsx'
 
 # Load - wait for it
 time.sleep(5)
@@ -119,7 +119,7 @@ for course in coursesName:
     time.sleep(1)
 
     # Here i set the path of collection of times - the final one
-    path = "C:\\Users\\soma\\Downloads\\export (1).xlsx"
+    path = "/home/somabencsik/Downloads/export (1).xlsx"
 
     # Open here
     exported = openpyxl.load_workbook(path)
@@ -184,7 +184,7 @@ for course in coursesName:
     # Just close the websites pop up window
     browser.find_element_by_xpath('//*[@title="close"]').click()
 
-path = "C:\\Users\\soma\\Downloads\\export.xlsx"
+path = "/home/somabencsik/Downloads/export.xlsx"
 os.remove(path)
 
 collected = openpyxl.load_workbook('collected.xlsx')
@@ -197,12 +197,10 @@ for i in range(0, len(coursesName)):
     counter = 1
 
     # Puts all the times of the courses
-    while True:
+    for i in range(20):
         actualCell = sheet.cell(row = counter, column = columnCounter).value
         if(actualCell != None):
             f.write(actualCell + "\n")
-        else:
-            break
         counter = counter + 1
 
     f.write("*\n")
