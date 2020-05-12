@@ -13,9 +13,16 @@ from openpyxl import Workbook
 # making a path for the files
 import os
 
+#global browser
 
 # Select the driver for the browser
-browser = webdriver.Chrome(executable_path="/home/somabencsik/Documents/Corgeek-s-game/chromedriver")
+
+chromeOptions = webdriver.ChromeOptions()
+prefs = {"download.default_directory" : os.getcwd()}
+chromeOptions.add_experimental_option("prefs",prefs)
+
+browser = webdriver.Chrome(executable_path="chromedriver.exe", chrome_options=chromeOptions)
+    
 # Actions to 'move' a virtual mouse
 action = ActionChains(browser)
 
@@ -44,10 +51,13 @@ targyfelvetel.click()
 # This checks in a radio buttom for the necessary courses
 mintaTantargyakRadio = browser.find_element_by_id('upFilter_rbtnSubjectType_0')
 mintaTantargyakRadio.click()
-time.sleep(0.5)
-listazasButton = browser.find_element_by_id('upFilter_expandedsearchbutton')
-listazasButton.click()
-
+time.sleep(1)
+try:
+    listazasButton = browser.find_element_by_id('upFilter_expandedsearchbutton')
+    listazasButton.click()
+except:
+    listazasButton = browser.find_element_by_id('upFilter_expandedsearchbutton')
+    listazasButton.click()
 """
 This is downloading the must-have data of the courses. 
 Have to do it to all, but don't know the name, 
@@ -71,7 +81,7 @@ time.sleep(5)
 browser.find_element_by_id('h_addsubjects_gridSubjects_imexcel').click()
 
 # Wait for download the file
-path = '/home/somabencsik/Downloads/export.xlsx'
+path = os.getcwd() + '\\export.xlsx'
 
 # Load - wait for it
 time.sleep(5)
@@ -119,7 +129,7 @@ for course in coursesName:
     time.sleep(1)
 
     # Here i set the path of collection of times - the final one
-    path = "/home/somabencsik/Downloads/export (1).xlsx"
+    path = os.getcwd() + "\\export (1).xlsx"
 
     # Open here
     exported = openpyxl.load_workbook(path)
@@ -184,7 +194,7 @@ for course in coursesName:
     # Just close the websites pop up window
     browser.find_element_by_xpath('//*[@title="close"]').click()
 
-path = "/home/somabencsik/Downloads/export.xlsx"
+path = os.getcwd() + "\\export.xlsx"
 os.remove(path)
 
 collected = openpyxl.load_workbook('collected.xlsx')
@@ -209,3 +219,4 @@ for i in range(0, len(coursesName)):
     
 f.close()
 
+browser.close()
