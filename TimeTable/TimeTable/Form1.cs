@@ -271,7 +271,7 @@ namespace TimeTable
             string currentDir = Environment.CurrentDirectory;
             currentDir = currentDir.Substring(0,currentDir.Length - 29);
             currentDir += "main.exe";
-            Process.Start("D:\\2019-20-2\\Szoftverfejlesztés\\VeglegesPyExevel\\Corgeek-s-game-master\\main.exe");
+            Process.Start(currentDir);
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

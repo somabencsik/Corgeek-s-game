@@ -11,3 +11,16 @@ D:\2019-20-2\Szoftverfejlesztés\Vegleges0512\Corgeek-s-game-master\TimeTable\Ti
 D:\2019-20-2\Szoftverfejlesztés\Vegleges0512\Corgeek-s-game-master\TimeTable\TimeTable\obj\Release\TimeTableProject.csproj.GenerateResource.cache
 D:\2019-20-2\Szoftverfejlesztés\Vegleges0512\Corgeek-s-game-master\TimeTable\TimeTable\obj\Release\TimeTable.exe
 D:\2019-20-2\Szoftverfejlesztés\Vegleges0512\Corgeek-s-game-master\TimeTable\TimeTable\obj\Release\TimeTable.pdb
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\bin\Release\TimeTable.exe.config
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\bin\Release\TimeTable.exe
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\bin\Release\TimeTable.pdb
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\obj\Release\TimeTableProject.csprojAssemblyReference.cache
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\obj\Release\TimeTable.Form1.resources
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\obj\Release\TimeTable.midform.resources
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\obj\Release\TimeTable.MidFormTempTimeTable.resources
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\obj\Release\TimeTable.Orarend.resources
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\obj\Release\TimeTable.Orarend2.resources
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\obj\Release\TimeTable.Properties.Resources.resources
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\obj\Release\TimeTableProject.csproj.GenerateResource.cache
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\obj\Release\TimeTable.exe
+D:\2019-20-2\Szoftverfejlesztés\FINALFINAL\Corgeek-s-game\TimeTable\TimeTable\obj\Release\TimeTable.pdb
