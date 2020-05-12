@@ -25,7 +25,7 @@ namespace TimeTable
             MidFormTempTimeTable mft = new MidFormTempTimeTable(kivalasztott_targy_objektumok);
             ujlistacount = mft.getUj_lista_count();
             
-            mfLabel.Text = variacio_szam + " db variáció van, abból "+ ujlistacount+" ütközés mentes Mindet végig szeretnéd nézni?";
+            mfLabel.Text = variacio_szam + " órarend variáció van, abból "+ ujlistacount+" ütközés mentes. Mindet végig szeretnéd nézni?";
             if (ujlistacount == 0) {
                 utkMentesRadio.Text += " \n (ez most nem lehetséges)";
                 utkMentesRadio.Enabled = false;

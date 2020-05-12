@@ -120,7 +120,6 @@
             this.egyikSeJoLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.utkozespanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.TimeTable.SuspendLayout();
             this.panel1.SuspendLayout();
             this.egyikSeJoPanel.SuspendLayout();
@@ -1411,29 +1410,11 @@
             this.utkozespanel.Size = new System.Drawing.Size(1156, 265);
             this.utkozespanel.TabIndex = 32;
             // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Webdings", 36.31305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1445, 0);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(100, 86);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "r";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
-            // 
             // Orarend
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(67)))), ((int)(((byte)(85)))));
             this.ClientSize = new System.Drawing.Size(1548, 1057);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.timerlabel);
             this.Controls.Add(this.utkozespanel);
             this.Controls.Add(this.panel1);
@@ -1549,7 +1530,6 @@
         private System.Windows.Forms.Label utkozesLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel utkozespanel;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label egyikSeJoLabel;
         private System.Windows.Forms.Panel egyikSeJoPanel;

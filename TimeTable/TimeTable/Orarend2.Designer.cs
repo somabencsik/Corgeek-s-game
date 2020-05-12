@@ -109,6 +109,8 @@
             this.P19 = new System.Windows.Forms.Label();
             this.timerlabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.szamLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.egyikSeJoLabel = new System.Windows.Forms.Label();
@@ -116,9 +118,6 @@
             this.NextButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.szamLabel = new System.Windows.Forms.Label();
             this.TimeTable.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -1300,6 +1299,30 @@
             this.panel1.Size = new System.Drawing.Size(214, 760);
             this.panel1.TabIndex = 125;
             // 
+            // szamLabel
+            // 
+            this.szamLabel.AutoSize = true;
+            this.szamLabel.Font = new System.Drawing.Font("Century Gothic", 11.89565F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.szamLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.szamLabel.Location = new System.Drawing.Point(12, 352);
+            this.szamLabel.Name = "szamLabel";
+            this.szamLabel.Size = new System.Drawing.Size(58, 23);
+            this.szamLabel.TabIndex = 31;
+            this.szamLabel.Text = "szám";
+            this.szamLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.26957F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(11, 293);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(182, 44);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Ütközésmentes\r\nvariációk összesen:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -1369,53 +1392,12 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Webdings", 36.31305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1437, 0);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(100, 86);
-            this.button1.TabIndex = 127;
-            this.button1.Text = "r";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.26957F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(11, 293);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 44);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Ütközésmentes\r\nvariációk összesen:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // szamLabel
-            // 
-            this.szamLabel.AutoSize = true;
-            this.szamLabel.Font = new System.Drawing.Font("Century Gothic", 11.89565F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.szamLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.szamLabel.Location = new System.Drawing.Point(12, 352);
-            this.szamLabel.Name = "szamLabel";
-            this.szamLabel.Size = new System.Drawing.Size(58, 23);
-            this.szamLabel.TabIndex = 31;
-            this.szamLabel.Text = "szám";
-            this.szamLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // Orarend2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(67)))), ((int)(((byte)(85)))));
             this.ClientSize = new System.Drawing.Size(1537, 760);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.PreviousButton);
             this.Controls.Add(this.panel1);
@@ -1523,7 +1505,6 @@
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label szamLabel;
         private System.Windows.Forms.Label label3;
     }

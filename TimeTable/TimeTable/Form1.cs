@@ -273,5 +273,10 @@ namespace TimeTable
             currentDir += "main.exe";
             Process.Start("D:\\2019-20-2\\Szoftverfejlesztés\\VeglegesPyExevel\\Corgeek-s-game-master\\main.exe");
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

@@ -359,7 +359,9 @@ namespace TimeTable
 
         private void Orarend_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Environment.Exit(0);
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -682,10 +684,7 @@ namespace TimeTable
             toolTip1.SetToolTip(P19, P19.Text);
         }
 
-        private void button1_MouseHover(object sender, EventArgs e)
-        {
-            toolTip1.SetToolTip(button1, "Kilépés");
-        }
+        
     }
 
 }

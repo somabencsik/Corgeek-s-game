@@ -431,7 +431,9 @@ namespace TimeTable
 
         private void Orarend2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Environment.Exit(0);
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
         }
 
         private void timer1_Tick_1(object sender, EventArgs e)
