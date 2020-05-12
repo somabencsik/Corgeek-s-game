@@ -89,7 +89,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(67)))), ((int)(((byte)(85)))));
-            this.ClientSize = new System.Drawing.Size(713, 340);
+            this.ClientSize = new System.Drawing.Size(790, 340);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.osszesRadio);
             this.Controls.Add(this.utkMentesRadio);

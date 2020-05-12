@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.OpenFileButton = new System.Windows.Forms.Button();
             this.listBoxLeft = new System.Windows.Forms.ListBox();
             this.listBoxRight = new System.Windows.Forms.ListBox();
@@ -40,6 +41,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.ScriptBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // OpenFileButton
@@ -47,7 +50,7 @@
             this.OpenFileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OpenFileButton.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.OpenFileButton.ForeColor = System.Drawing.Color.White;
-            this.OpenFileButton.Location = new System.Drawing.Point(46, 70);
+            this.OpenFileButton.Location = new System.Drawing.Point(46, 235);
             this.OpenFileButton.Name = "OpenFileButton";
             this.OpenFileButton.Size = new System.Drawing.Size(144, 30);
             this.OpenFileButton.TabIndex = 0;
@@ -64,7 +67,7 @@
             this.listBoxLeft.FormattingEnabled = true;
             this.listBoxLeft.HorizontalScrollbar = true;
             this.listBoxLeft.ItemHeight = 22;
-            this.listBoxLeft.Location = new System.Drawing.Point(46, 206);
+            this.listBoxLeft.Location = new System.Drawing.Point(46, 369);
             this.listBoxLeft.Name = "listBoxLeft";
             this.listBoxLeft.Size = new System.Drawing.Size(441, 222);
             this.listBoxLeft.TabIndex = 1;
@@ -78,7 +81,7 @@
             this.listBoxRight.FormattingEnabled = true;
             this.listBoxRight.HorizontalScrollbar = true;
             this.listBoxRight.ItemHeight = 22;
-            this.listBoxRight.Location = new System.Drawing.Point(596, 206);
+            this.listBoxRight.Location = new System.Drawing.Point(596, 369);
             this.listBoxRight.Name = "listBoxRight";
             this.listBoxRight.Size = new System.Drawing.Size(441, 222);
             this.listBoxRight.TabIndex = 2;
@@ -89,7 +92,7 @@
             this.sendItemToRightBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sendItemToRightBtn.Font = new System.Drawing.Font("Webdings", 36.31305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.sendItemToRightBtn.ForeColor = System.Drawing.Color.White;
-            this.sendItemToRightBtn.Location = new System.Drawing.Point(509, 248);
+            this.sendItemToRightBtn.Location = new System.Drawing.Point(509, 409);
             this.sendItemToRightBtn.Margin = new System.Windows.Forms.Padding(0);
             this.sendItemToRightBtn.Name = "sendItemToRightBtn";
             this.sendItemToRightBtn.Size = new System.Drawing.Size(75, 63);
@@ -104,7 +107,7 @@
             this.sendItemToLeftBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sendItemToLeftBtn.Font = new System.Drawing.Font("Webdings", 36.31305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.sendItemToLeftBtn.ForeColor = System.Drawing.Color.White;
-            this.sendItemToLeftBtn.Location = new System.Drawing.Point(509, 311);
+            this.sendItemToLeftBtn.Location = new System.Drawing.Point(509, 472);
             this.sendItemToLeftBtn.Margin = new System.Windows.Forms.Padding(0);
             this.sendItemToLeftBtn.Name = "sendItemToLeftBtn";
             this.sendItemToLeftBtn.Size = new System.Drawing.Size(75, 63);
@@ -122,7 +125,7 @@
             this.targyakKivalasztBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.targyakKivalasztBtn.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.targyakKivalasztBtn.ForeColor = System.Drawing.Color.White;
-            this.targyakKivalasztBtn.Location = new System.Drawing.Point(921, 462);
+            this.targyakKivalasztBtn.Location = new System.Drawing.Point(921, 605);
             this.targyakKivalasztBtn.Name = "targyakKivalasztBtn";
             this.targyakKivalasztBtn.Size = new System.Drawing.Size(116, 68);
             this.targyakKivalasztBtn.TabIndex = 14;
@@ -135,22 +138,22 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(42, 26);
+            this.label5.Location = new System.Drawing.Point(42, 182);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(495, 22);
+            this.label5.Size = new System.Drawing.Size(627, 22);
             this.label5.TabIndex = 15;
-            this.label5.Text = "1. Válaszd ki a mintatanterv tárgyait tartalmazó file-t!";
+            this.label5.Text = "2. Válaszd ki a mintatanterv tárgyait tartalmazó file-t! (AllCourse.txt)";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(42, 126);
+            this.label6.Location = new System.Drawing.Point(42, 295);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(618, 44);
             this.label6.TabIndex = 16;
-            this.label6.Text = "2. Válaszd ki, hogy melyik tárgyakat szeretnéd az órarendbe tenni!\r\nA ctrl lenyom" +
+            this.label6.Text = "3. Válaszd ki, hogy melyik tárgyakat szeretnéd az órarendbe tenni!\r\nA ctrl lenyom" +
     "va tartásával tudsz egyszerre több sort is kiválasztani.";
             // 
             // button1
@@ -174,13 +177,39 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(42, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(847, 66);
+            this.label1.TabIndex = 35;
+            this.label1.Text = resources.GetString("label1.Text");
+            // 
+            // ScriptBtn
+            // 
+            this.ScriptBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ScriptBtn.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ScriptBtn.ForeColor = System.Drawing.Color.White;
+            this.ScriptBtn.Location = new System.Drawing.Point(46, 123);
+            this.ScriptBtn.Name = "ScriptBtn";
+            this.ScriptBtn.Size = new System.Drawing.Size(144, 30);
+            this.ScriptBtn.TabIndex = 36;
+            this.ScriptBtn.Text = "Script indítása";
+            this.ScriptBtn.UseVisualStyleBackColor = true;
+            this.ScriptBtn.Click += new System.EventHandler(this.ScriptBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(67)))), ((int)(((byte)(85)))));
-            this.ClientSize = new System.Drawing.Size(1076, 562);
+            this.ClientSize = new System.Drawing.Size(1077, 695);
+            this.Controls.Add(this.ScriptBtn);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -192,7 +221,7 @@
             this.Controls.Add(this.OpenFileButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Órarendgeneráló";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -212,6 +241,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button ScriptBtn;
     }
 }
 

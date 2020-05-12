@@ -1,6 +1,6 @@
 ﻿namespace TimeTable
 {
-    partial class Orarend
+    partial class MidFormTempTimeTable
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.TimeTable = new System.Windows.Forms.TableLayoutPanel();
             this.P15 = new System.Windows.Forms.Label();
             this.CS15 = new System.Windows.Forms.Label();
@@ -107,24 +106,7 @@
             this.SZE19 = new System.Windows.Forms.Label();
             this.CS19 = new System.Windows.Forms.Label();
             this.P19 = new System.Windows.Forms.Label();
-            this.NextButton = new System.Windows.Forms.Button();
-            this.vaneUtkozesLabel = new System.Windows.Forms.Label();
-            this.PreviousButton = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timerlabel = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.utkozesLabel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.egyikSeJoPanel = new System.Windows.Forms.Panel();
-            this.egyikSeJoLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.utkozespanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.TimeTable.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.egyikSeJoPanel.SuspendLayout();
-            this.utkozespanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // TimeTable
@@ -215,7 +197,7 @@
             this.TimeTable.Controls.Add(this.CS19, 4, 12);
             this.TimeTable.Controls.Add(this.P19, 5, 12);
             this.TimeTable.ForeColor = System.Drawing.Color.White;
-            this.TimeTable.Location = new System.Drawing.Point(294, 113);
+            this.TimeTable.Location = new System.Drawing.Point(58, 53);
             this.TimeTable.Name = "TimeTable";
             this.TimeTable.RowCount = 13;
             this.TimeTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692308F));
@@ -231,8 +213,9 @@
             this.TimeTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692308F));
             this.TimeTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692308F));
             this.TimeTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692308F));
+            this.TimeTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.TimeTable.Size = new System.Drawing.Size(1156, 661);
-            this.TimeTable.TabIndex = 20;
+            this.TimeTable.TabIndex = 22;
             // 
             // P15
             // 
@@ -245,7 +228,6 @@
             this.P15.Size = new System.Drawing.Size(208, 50);
             this.P15.TabIndex = 99;
             this.P15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P15.MouseHover += new System.EventHandler(this.P15_MouseHover);
             // 
             // CS15
             // 
@@ -258,7 +240,6 @@
             this.CS15.Size = new System.Drawing.Size(203, 50);
             this.CS15.TabIndex = 98;
             this.CS15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS15.MouseHover += new System.EventHandler(this.CS15_MouseHover);
             // 
             // SZE15
             // 
@@ -271,7 +252,6 @@
             this.SZE15.Size = new System.Drawing.Size(203, 50);
             this.SZE15.TabIndex = 97;
             this.SZE15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE15.MouseHover += new System.EventHandler(this.SZE15_MouseHover);
             // 
             // K15
             // 
@@ -284,7 +264,6 @@
             this.K15.Size = new System.Drawing.Size(203, 50);
             this.K15.TabIndex = 96;
             this.K15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K15.MouseHover += new System.EventHandler(this.K15_MouseHover);
             // 
             // H15
             // 
@@ -298,7 +277,6 @@
             this.H15.Size = new System.Drawing.Size(203, 50);
             this.H15.TabIndex = 95;
             this.H15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H15.MouseHover += new System.EventHandler(this.H15_MouseHover);
             // 
             // P16
             // 
@@ -311,7 +289,6 @@
             this.P16.Size = new System.Drawing.Size(208, 50);
             this.P16.TabIndex = 105;
             this.P16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P16.MouseHover += new System.EventHandler(this.P16_MouseHover);
             // 
             // P14
             // 
@@ -324,7 +301,6 @@
             this.P14.Size = new System.Drawing.Size(208, 50);
             this.P14.TabIndex = 94;
             this.P14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P14.MouseHover += new System.EventHandler(this.P14_MouseHover);
             // 
             // CS14
             // 
@@ -337,7 +313,6 @@
             this.CS14.Size = new System.Drawing.Size(203, 50);
             this.CS14.TabIndex = 93;
             this.CS14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS14.MouseHover += new System.EventHandler(this.CS14_MouseHover);
             // 
             // SZE14
             // 
@@ -351,7 +326,6 @@
             this.SZE14.Size = new System.Drawing.Size(203, 50);
             this.SZE14.TabIndex = 92;
             this.SZE14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE14.MouseHover += new System.EventHandler(this.SZE14_MouseHover);
             // 
             // K14
             // 
@@ -364,7 +338,6 @@
             this.K14.Size = new System.Drawing.Size(203, 50);
             this.K14.TabIndex = 91;
             this.K14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K14.MouseHover += new System.EventHandler(this.K14_MouseHover);
             // 
             // H14
             // 
@@ -378,7 +351,6 @@
             this.H14.Size = new System.Drawing.Size(203, 50);
             this.H14.TabIndex = 90;
             this.H14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H14.MouseHover += new System.EventHandler(this.H14_MouseHover);
             // 
             // P13
             // 
@@ -391,7 +363,6 @@
             this.P13.Size = new System.Drawing.Size(208, 50);
             this.P13.TabIndex = 89;
             this.P13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P13.MouseHover += new System.EventHandler(this.P13_MouseHover);
             // 
             // CS13
             // 
@@ -404,7 +375,6 @@
             this.CS13.Size = new System.Drawing.Size(203, 50);
             this.CS13.TabIndex = 88;
             this.CS13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS13.MouseHover += new System.EventHandler(this.CS13_MouseHover);
             // 
             // SZE13
             // 
@@ -418,7 +388,6 @@
             this.SZE13.Size = new System.Drawing.Size(203, 50);
             this.SZE13.TabIndex = 87;
             this.SZE13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE13.MouseHover += new System.EventHandler(this.SZE13_MouseHover);
             // 
             // K13
             // 
@@ -433,7 +402,6 @@
             this.K13.Size = new System.Drawing.Size(203, 50);
             this.K13.TabIndex = 86;
             this.K13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K13.MouseHover += new System.EventHandler(this.K13_MouseHover);
             // 
             // H13
             // 
@@ -447,7 +415,6 @@
             this.H13.Size = new System.Drawing.Size(203, 50);
             this.H13.TabIndex = 85;
             this.H13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H13.MouseHover += new System.EventHandler(this.H13_MouseHover);
             // 
             // P12
             // 
@@ -460,7 +427,6 @@
             this.P12.Size = new System.Drawing.Size(208, 50);
             this.P12.TabIndex = 84;
             this.P12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P12.MouseHover += new System.EventHandler(this.P12_MouseHover);
             // 
             // CS12
             // 
@@ -473,7 +439,6 @@
             this.CS12.Size = new System.Drawing.Size(203, 50);
             this.CS12.TabIndex = 83;
             this.CS12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS12.MouseHover += new System.EventHandler(this.CS12_MouseHover);
             // 
             // SZE12
             // 
@@ -487,7 +452,6 @@
             this.SZE12.Size = new System.Drawing.Size(203, 50);
             this.SZE12.TabIndex = 82;
             this.SZE12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE12.MouseHover += new System.EventHandler(this.SZE12_MouseHover);
             // 
             // K12
             // 
@@ -502,7 +466,6 @@
             this.K12.Size = new System.Drawing.Size(203, 50);
             this.K12.TabIndex = 81;
             this.K12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K12.MouseHover += new System.EventHandler(this.K12_MouseHover);
             // 
             // H12
             // 
@@ -515,7 +478,6 @@
             this.H12.Size = new System.Drawing.Size(203, 50);
             this.H12.TabIndex = 80;
             this.H12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H12.MouseHover += new System.EventHandler(this.H12_MouseHover);
             // 
             // P11
             // 
@@ -529,7 +491,6 @@
             this.P11.Size = new System.Drawing.Size(208, 50);
             this.P11.TabIndex = 79;
             this.P11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P11.MouseHover += new System.EventHandler(this.P11_MouseHover);
             // 
             // CS11
             // 
@@ -543,7 +504,6 @@
             this.CS11.Size = new System.Drawing.Size(203, 50);
             this.CS11.TabIndex = 78;
             this.CS11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS11.MouseHover += new System.EventHandler(this.CS11_MouseHover);
             // 
             // SZE11
             // 
@@ -557,7 +517,6 @@
             this.SZE11.Size = new System.Drawing.Size(203, 50);
             this.SZE11.TabIndex = 77;
             this.SZE11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE11.MouseHover += new System.EventHandler(this.SZE11_MouseHover);
             // 
             // K11
             // 
@@ -570,7 +529,6 @@
             this.K11.Size = new System.Drawing.Size(203, 50);
             this.K11.TabIndex = 76;
             this.K11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K11.MouseHover += new System.EventHandler(this.K11_MouseHover);
             // 
             // H11
             // 
@@ -584,7 +542,6 @@
             this.H11.Size = new System.Drawing.Size(203, 50);
             this.H11.TabIndex = 75;
             this.H11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H11.MouseHover += new System.EventHandler(this.H11_MouseHover);
             // 
             // P10
             // 
@@ -598,7 +555,6 @@
             this.P10.Size = new System.Drawing.Size(208, 50);
             this.P10.TabIndex = 74;
             this.P10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P10.MouseHover += new System.EventHandler(this.P10_MouseHover);
             // 
             // CS10
             // 
@@ -612,7 +568,6 @@
             this.CS10.Size = new System.Drawing.Size(203, 50);
             this.CS10.TabIndex = 73;
             this.CS10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS10.MouseHover += new System.EventHandler(this.CS10_MouseHover);
             // 
             // SZE10
             // 
@@ -626,7 +581,6 @@
             this.SZE10.Size = new System.Drawing.Size(203, 50);
             this.SZE10.TabIndex = 72;
             this.SZE10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE10.MouseHover += new System.EventHandler(this.SZE10_MouseHover);
             // 
             // K10
             // 
@@ -639,7 +593,6 @@
             this.K10.Size = new System.Drawing.Size(203, 50);
             this.K10.TabIndex = 71;
             this.K10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K10.MouseHover += new System.EventHandler(this.K10_MouseHover);
             // 
             // H10
             // 
@@ -653,7 +606,6 @@
             this.H10.Size = new System.Drawing.Size(203, 50);
             this.H10.TabIndex = 70;
             this.H10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H10.MouseHover += new System.EventHandler(this.H10_MouseHover);
             // 
             // P09
             // 
@@ -667,7 +619,6 @@
             this.P09.Size = new System.Drawing.Size(208, 50);
             this.P09.TabIndex = 69;
             this.P09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P09.MouseHover += new System.EventHandler(this.P09_MouseHover);
             // 
             // CS09
             // 
@@ -681,7 +632,6 @@
             this.CS09.Size = new System.Drawing.Size(203, 50);
             this.CS09.TabIndex = 68;
             this.CS09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS09.MouseHover += new System.EventHandler(this.CS09_MouseHover);
             // 
             // SZE09
             // 
@@ -694,7 +644,6 @@
             this.SZE09.Size = new System.Drawing.Size(203, 50);
             this.SZE09.TabIndex = 67;
             this.SZE09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE09.MouseHover += new System.EventHandler(this.SZE09_MouseHover);
             // 
             // K09
             // 
@@ -708,7 +657,6 @@
             this.K09.Size = new System.Drawing.Size(203, 50);
             this.K09.TabIndex = 66;
             this.K09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K09.MouseHover += new System.EventHandler(this.K09_MouseHover);
             // 
             // H09
             // 
@@ -722,7 +670,6 @@
             this.H09.Size = new System.Drawing.Size(203, 50);
             this.H09.TabIndex = 65;
             this.H09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H09.MouseHover += new System.EventHandler(this.H09_MouseHover);
             // 
             // P08
             // 
@@ -735,7 +682,6 @@
             this.P08.Size = new System.Drawing.Size(208, 50);
             this.P08.TabIndex = 64;
             this.P08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P08.MouseHover += new System.EventHandler(this.P08_MouseHover);
             // 
             // CS08
             // 
@@ -749,7 +695,6 @@
             this.CS08.Size = new System.Drawing.Size(203, 50);
             this.CS08.TabIndex = 63;
             this.CS08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS08.MouseHover += new System.EventHandler(this.CS08_MouseHover);
             // 
             // SZE08
             // 
@@ -762,7 +707,6 @@
             this.SZE08.Size = new System.Drawing.Size(203, 50);
             this.SZE08.TabIndex = 62;
             this.SZE08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE08.MouseHover += new System.EventHandler(this.SZE08_MouseHover);
             // 
             // K08
             // 
@@ -776,7 +720,6 @@
             this.K08.Size = new System.Drawing.Size(203, 50);
             this.K08.TabIndex = 60;
             this.K08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K08.MouseHover += new System.EventHandler(this.K08_MouseHover);
             // 
             // _lbl13
             // 
@@ -888,7 +831,6 @@
             this.H08.Size = new System.Drawing.Size(203, 50);
             this.H08.TabIndex = 11;
             this.H08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H08.MouseHover += new System.EventHandler(this.H08_MouseHover);
             // 
             // _lbl5
             // 
@@ -1000,7 +942,6 @@
             this.H16.Size = new System.Drawing.Size(203, 50);
             this.H16.TabIndex = 101;
             this.H16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H16.MouseHover += new System.EventHandler(this.H16_MouseHover);
             // 
             // K16
             // 
@@ -1013,7 +954,6 @@
             this.K16.Size = new System.Drawing.Size(203, 50);
             this.K16.TabIndex = 102;
             this.K16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K16.MouseHover += new System.EventHandler(this.K16_MouseHover);
             // 
             // SZE16
             // 
@@ -1026,7 +966,6 @@
             this.SZE16.Size = new System.Drawing.Size(203, 50);
             this.SZE16.TabIndex = 103;
             this.SZE16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE16.MouseHover += new System.EventHandler(this.SZE16_MouseHover);
             // 
             // CS16
             // 
@@ -1039,7 +978,6 @@
             this.CS16.Size = new System.Drawing.Size(203, 50);
             this.CS16.TabIndex = 104;
             this.CS16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS16.MouseHover += new System.EventHandler(this.CS16_MouseHover);
             // 
             // _lbl15
             // 
@@ -1066,7 +1004,6 @@
             this.H17.Size = new System.Drawing.Size(203, 50);
             this.H17.TabIndex = 107;
             this.H17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H17.MouseHover += new System.EventHandler(this.H17_MouseHover);
             // 
             // K17
             // 
@@ -1079,7 +1016,6 @@
             this.K17.Size = new System.Drawing.Size(203, 50);
             this.K17.TabIndex = 108;
             this.K17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K17.MouseHover += new System.EventHandler(this.K17_MouseHover);
             // 
             // SZE17
             // 
@@ -1092,7 +1028,6 @@
             this.SZE17.Size = new System.Drawing.Size(203, 50);
             this.SZE17.TabIndex = 109;
             this.SZE17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE17.MouseHover += new System.EventHandler(this.SZE17_MouseHover);
             // 
             // _lbl16
             // 
@@ -1133,7 +1068,6 @@
             this.CS17.Size = new System.Drawing.Size(203, 50);
             this.CS17.TabIndex = 112;
             this.CS17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS17.MouseHover += new System.EventHandler(this.CS17_MouseHover);
             // 
             // P17
             // 
@@ -1146,7 +1080,6 @@
             this.P17.Size = new System.Drawing.Size(208, 50);
             this.P17.TabIndex = 113;
             this.P17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P17.MouseHover += new System.EventHandler(this.P17_MouseHover);
             // 
             // H18
             // 
@@ -1159,7 +1092,6 @@
             this.H18.Size = new System.Drawing.Size(203, 50);
             this.H18.TabIndex = 114;
             this.H18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H18.MouseHover += new System.EventHandler(this.H18_MouseHover);
             // 
             // K18
             // 
@@ -1172,7 +1104,6 @@
             this.K18.Size = new System.Drawing.Size(203, 50);
             this.K18.TabIndex = 115;
             this.K18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K18.MouseHover += new System.EventHandler(this.K18_MouseHover);
             // 
             // SZE18
             // 
@@ -1185,7 +1116,6 @@
             this.SZE18.Size = new System.Drawing.Size(203, 50);
             this.SZE18.TabIndex = 116;
             this.SZE18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE18.MouseHover += new System.EventHandler(this.SZE18_MouseHover);
             // 
             // CS18
             // 
@@ -1198,7 +1128,6 @@
             this.CS18.Size = new System.Drawing.Size(203, 50);
             this.CS18.TabIndex = 117;
             this.CS18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS18.MouseHover += new System.EventHandler(this.CS18_MouseHover);
             // 
             // P18
             // 
@@ -1211,7 +1140,6 @@
             this.P18.Size = new System.Drawing.Size(208, 50);
             this.P18.TabIndex = 118;
             this.P18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P18.MouseHover += new System.EventHandler(this.P18_MouseHover);
             // 
             // H19
             // 
@@ -1224,7 +1152,6 @@
             this.H19.Size = new System.Drawing.Size(203, 61);
             this.H19.TabIndex = 119;
             this.H19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.H19.MouseHover += new System.EventHandler(this.H19_MouseHover);
             // 
             // K19
             // 
@@ -1237,7 +1164,6 @@
             this.K19.Size = new System.Drawing.Size(203, 61);
             this.K19.TabIndex = 120;
             this.K19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.K19.MouseHover += new System.EventHandler(this.K19_MouseHover);
             // 
             // SZE19
             // 
@@ -1250,7 +1176,6 @@
             this.SZE19.Size = new System.Drawing.Size(203, 61);
             this.SZE19.TabIndex = 121;
             this.SZE19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SZE19.MouseHover += new System.EventHandler(this.SZE19_MouseHover);
             // 
             // CS19
             // 
@@ -1263,7 +1188,6 @@
             this.CS19.Size = new System.Drawing.Size(203, 61);
             this.CS19.TabIndex = 122;
             this.CS19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CS19.MouseHover += new System.EventHandler(this.CS19_MouseHover);
             // 
             // P19
             // 
@@ -1276,186 +1200,18 @@
             this.P19.Size = new System.Drawing.Size(208, 61);
             this.P19.TabIndex = 123;
             this.P19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.P19.MouseHover += new System.EventHandler(this.P19_MouseHover);
             // 
-            // NextButton
+            // MidFormTempTimeTable
             // 
-            this.NextButton.Enabled = false;
-            this.NextButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.NextButton.FlatAppearance.BorderSize = 0;
-            this.NextButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NextButton.Font = new System.Drawing.Font("Webdings", 36.31305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.NextButton.ForeColor = System.Drawing.Color.White;
-            this.NextButton.Location = new System.Drawing.Point(1456, 113);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(57, 62);
-            this.NextButton.TabIndex = 22;
-            this.NextButton.Text = "4";
-            this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
-            // 
-            // vaneUtkozesLabel
-            // 
-            this.vaneUtkozesLabel.Location = new System.Drawing.Point(0, 0);
-            this.vaneUtkozesLabel.Name = "vaneUtkozesLabel";
-            this.vaneUtkozesLabel.Size = new System.Drawing.Size(100, 23);
-            this.vaneUtkozesLabel.TabIndex = 29;
-            // 
-            // PreviousButton
-            // 
-            this.PreviousButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.PreviousButton.Enabled = false;
-            this.PreviousButton.FlatAppearance.BorderSize = 0;
-            this.PreviousButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PreviousButton.Font = new System.Drawing.Font("Webdings", 36.31305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.PreviousButton.ForeColor = System.Drawing.Color.White;
-            this.PreviousButton.Location = new System.Drawing.Point(231, 113);
-            this.PreviousButton.Name = "PreviousButton";
-            this.PreviousButton.Size = new System.Drawing.Size(57, 62);
-            this.PreviousButton.TabIndex = 26;
-            this.PreviousButton.Text = "3";
-            this.PreviousButton.UseVisualStyleBackColor = true;
-            this.PreviousButton.Click += new System.EventHandler(this.PreviousButton_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timerlabel
-            // 
-            this.timerlabel.AutoSize = true;
-            this.timerlabel.Font = new System.Drawing.Font("Century Gothic", 18.15652F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.timerlabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.timerlabel.Location = new System.Drawing.Point(793, 34);
-            this.timerlabel.Name = "timerlabel";
-            this.timerlabel.Size = new System.Drawing.Size(102, 36);
-            this.timerlabel.TabIndex = 27;
-            this.timerlabel.Text = "label1";
-            this.timerlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.26957F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(11, 152);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 110);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Ha egy tárgy nevét\r\nnem látod, mert\r\ntúl hosszú, vagy mert\r\nütközik egy másikkal," +
-    "\r\nlebegj fölé!";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // utkozesLabel
-            // 
-            this.utkozesLabel.AutoSize = true;
-            this.utkozesLabel.Font = new System.Drawing.Font("Century Gothic", 11.26957F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.utkozesLabel.Location = new System.Drawing.Point(20, 19);
-            this.utkozesLabel.Name = "utkozesLabel";
-            this.utkozesLabel.Padding = new System.Windows.Forms.Padding(5);
-            this.utkozesLabel.Size = new System.Drawing.Size(79, 33);
-            this.utkozesLabel.TabIndex = 30;
-            this.utkozesLabel.Text = "label2";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(93)))), ((int)(((byte)(119)))));
-            this.panel1.Controls.Add(this.egyikSeJoPanel);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(214, 1057);
-            this.panel1.TabIndex = 31;
-            // 
-            // egyikSeJoPanel
-            // 
-            this.egyikSeJoPanel.Controls.Add(this.egyikSeJoLabel);
-            this.egyikSeJoPanel.Location = new System.Drawing.Point(15, 780);
-            this.egyikSeJoPanel.Name = "egyikSeJoPanel";
-            this.egyikSeJoPanel.Size = new System.Drawing.Size(183, 265);
-            this.egyikSeJoPanel.TabIndex = 31;
-            // 
-            // egyikSeJoLabel
-            // 
-            this.egyikSeJoLabel.AutoSize = true;
-            this.egyikSeJoLabel.Font = new System.Drawing.Font("Century Gothic", 11.26957F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.egyikSeJoLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.egyikSeJoLabel.Location = new System.Drawing.Point(12, 18);
-            this.egyikSeJoLabel.Name = "egyikSeJoLabel";
-            this.egyikSeJoLabel.Size = new System.Drawing.Size(73, 22);
-            this.egyikSeJoLabel.TabIndex = 30;
-            this.egyikSeJoLabel.Text = "szoveg";
-            this.egyikSeJoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.26957F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(11, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 88);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Az órarendek\r\nközött a nyilak \r\nsegítségével\r\ntudsz navigálni.";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // utkozespanel
-            // 
-            this.utkozespanel.Controls.Add(this.utkozesLabel);
-            this.utkozespanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.utkozespanel.Location = new System.Drawing.Point(294, 780);
-            this.utkozespanel.Name = "utkozespanel";
-            this.utkozespanel.Size = new System.Drawing.Size(1156, 265);
-            this.utkozespanel.TabIndex = 32;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Webdings", 36.31305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1445, 0);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(100, 86);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "r";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
-            // 
-            // Orarend
-            // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(67)))), ((int)(((byte)(85)))));
-            this.ClientSize = new System.Drawing.Size(1548, 1057);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.timerlabel);
-            this.Controls.Add(this.utkozespanel);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.PreviousButton);
-            this.Controls.Add(this.vaneUtkozesLabel);
-            this.Controls.Add(this.NextButton);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1273, 767);
             this.Controls.Add(this.TimeTable);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "Orarend";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Órarend";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Orarend_FormClosing);
+            this.Name = "MidFormTempTimeTable";
+            this.Text = "MidFormTempTimeTable";
             this.TimeTable.ResumeLayout(false);
             this.TimeTable.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.egyikSeJoPanel.ResumeLayout(false);
-            this.egyikSeJoPanel.PerformLayout();
-            this.utkozespanel.ResumeLayout(false);
-            this.utkozespanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1467,6 +1223,7 @@
         private System.Windows.Forms.Label SZE15;
         private System.Windows.Forms.Label K15;
         private System.Windows.Forms.Label H15;
+        private System.Windows.Forms.Label P16;
         private System.Windows.Forms.Label P14;
         private System.Windows.Forms.Label CS14;
         private System.Windows.Forms.Label SZE14;
@@ -1515,8 +1272,6 @@
         private System.Windows.Forms.Label _lbl2;
         private System.Windows.Forms.Label _lbl1;
         private System.Windows.Forms.Label _lbl6;
-        private System.Windows.Forms.Button NextButton;
-        private System.Windows.Forms.Label P16;
         private System.Windows.Forms.Label _label14;
         private System.Windows.Forms.Label H16;
         private System.Windows.Forms.Label K16;
@@ -1540,18 +1295,5 @@
         private System.Windows.Forms.Label SZE19;
         private System.Windows.Forms.Label CS19;
         private System.Windows.Forms.Label P19;
-        private System.Windows.Forms.Label vaneUtkozesLabel;
-        private System.Windows.Forms.Button PreviousButton;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label timerlabel;
-        private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label utkozesLabel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel utkozespanel;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label egyikSeJoLabel;
-        private System.Windows.Forms.Panel egyikSeJoPanel;
     }
 }

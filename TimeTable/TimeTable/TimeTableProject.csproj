@@ -53,6 +53,12 @@
     <Compile Include="midform.Designer.cs">
       <DependentUpon>midform.cs</DependentUpon>
     </Compile>
+    <Compile Include="MidFormTempTimeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MidFormTempTimeTable.Designer.cs">
+      <DependentUpon>MidFormTempTimeTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Orarend.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="midform.resx">
       <DependentUpon>midform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidFormTempTimeTable.resx">
+      <DependentUpon>MidFormTempTimeTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Orarend.resx">
       <DependentUpon>Orarend.cs</DependentUpon>

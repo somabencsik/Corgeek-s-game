@@ -46,9 +46,9 @@ namespace TimeTable
                 
                 //Read the contents of the file into a stream
                 var fileStream = openFileDialog1.OpenFile();
-                Encoding encodingType = Encoding.GetEncoding("Windows-1250");
+                //Encoding encodingType = Encoding.GetEncoding("Windows-1250");
 
-                StreamReader reader = new StreamReader(fileStream);//, encodingType);       //!!! ez kell bele, mert én most külön lementettem a txt-t és ott rákérdezett a kódolására de elsőre nem mentettem le külön és akkor kellett!
+                StreamReader reader = new StreamReader(fileStream);  //encodingType 2. paraméter ha nem lenne jó a kódolás
                 while (reader.Peek() >= 0)
                 {
                     fileContent.Add(reader.ReadLine());
@@ -56,21 +56,10 @@ namespace TimeTable
 
                 foreach (string line in fileContent)    //ha tárgyról van szó
                 {
-                    //eredeti
                     if (!line.Equals("*") && !line.Contains(":"))
                     {
                         osszes_targy.Add(line);
-                    }
-
-                    //új
-                    /*if ( ( line.Length > 1 && line.Substring(0, 1).Equals("*"))){      //kotlint kivéve működik, az előtt nincs csillag
-                        if (line.Length == 18) {    //ha a kotlinról van szó
-                            if (line.Substring(0, 6).Equals("Kotlin")) {
-                                osszes_targy.Add(line);
-                            }
-                        }
-                        osszes_targy.Add(line);                        
-                    }  */                  
+                    }   
                 }                                        
                                 
      
@@ -274,6 +263,15 @@ namespace TimeTable
                 targyakKivalasztBtn.Visible = true;
                 targyakKivalasztBtn.Enabled = true;
             }
+        }
+
+
+        private void ScriptBtn_Click(object sender, EventArgs e)
+        {
+            string currentDir = Environment.CurrentDirectory;
+            currentDir = currentDir.Substring(0,currentDir.Length - 29);
+            currentDir += "main.exe";
+            Process.Start("D:\\2019-20-2\\Szoftverfejlesztés\\VeglegesPyExevel\\Corgeek-s-game-master\\main.exe");
         }
     }
 }

@@ -13,13 +13,26 @@ namespace TimeTable
     public partial class midform : Form
     {
         private List<Targy> kivalasztott_targy_objektumok = new List<Targy>();
+  
+        //uj
+        private int ujlistacount;
 
         public midform(List<Targy> t, int variacio_szam)
         {
             InitializeComponent();
             kivalasztott_targy_objektumok = t;
-            mfLabel.Text = variacio_szam + " db variáció van. Mindet végig szeretnéd nézni?";
+
+            MidFormTempTimeTable mft = new MidFormTempTimeTable(kivalasztott_targy_objektumok);
+            ujlistacount = mft.getUj_lista_count();
+            
+            mfLabel.Text = variacio_szam + " db variáció van, abból "+ ujlistacount+" ütközés mentes Mindet végig szeretnéd nézni?";
+            if (ujlistacount == 0) {
+                utkMentesRadio.Text += " \n (ez most nem lehetséges)";
+                utkMentesRadio.Enabled = false;
+            }
         }
+
+        
 
         private void button1_Click(object sender, EventArgs e)
         {

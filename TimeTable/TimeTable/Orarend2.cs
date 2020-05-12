@@ -19,6 +19,9 @@ namespace TimeTable
         private int hanyadik_variaciot_nezzuk_eppen;
 
         private List<int> uj_lista = new List<int>() { };
+        public int getUj_lista_count() {
+            return uj_lista.Count();
+        }
         
 
 
@@ -49,7 +52,6 @@ namespace TimeTable
                 foreach (Kurzus k in t.kurzus_lista)
                 {
                     k.SetId(sorId, oszlopId);
-                    //MessageBox.Show("id generated for " + k.EgeszSor + " " + k.getRowId() + " " + k.getColoumnId());
                     oszlopId++;
                 }
                 sorId++;
@@ -69,19 +71,17 @@ namespace TimeTable
 
             Vannak_e_utkozesek();
 
-            if (uj_lista.Count == 0) {
+            //szerintem ez nem kell de nem merem kivenni
+            /*if (uj_lista.Count == 0)
+            {
                 MessageBox.Show("Sajnos ezeket a tárgyakat nem tudod ütközés nélkül felvenni");
-                /*Form1 f1 = new Form1();
-                f1.Show();
-                this.Close();*/
+                Form1 f1 = new Form1();
+                *//*f1.Show();
+                this.Close();*//*
                 Environment.Exit(0);        //nem mukodik, ezert be kell zarni
+            }*/
 
-            }
-
-            //MessageBox.Show("Uj lista: ");
-            foreach (int i in uj_lista) {
-                //MessageBox.Show(i.ToString());
-            }
+            
             hanyadik_variaciot_nezzuk_eppen = uj_lista[0];
 
             szamLabel.Text = uj_lista.Count().ToString();
@@ -99,12 +99,7 @@ namespace TimeTable
 
         public void variaciok_megszamolasa(List<Targy> targyak)
         {
-            /*int n = 1;
-            foreach (Targy t in targyak)
-            {
-                n *= Variaciok_egy_targyra(t);
-            }
-            variaciok_szama = n;*/
+            
 
             int n = 1;
             foreach (Targy t in targyak)
@@ -167,7 +162,7 @@ namespace TimeTable
 
                             int szamok = Int32.Parse(temp_id.Substring(temp_id.Length - 2));  //kivettük az utolsó 2 betűt(8)
 
-                            int szamok_temp = szamok + 1; //(9)
+                            int szamok_temp = szamok + 1; 
                             temp_id = temp_id.Replace(temp_id.Substring(temp_id.Length - 2), szamok_temp.ToString("00"));
 
                             idotartam -= 1;
