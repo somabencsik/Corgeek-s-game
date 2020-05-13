@@ -46,9 +46,9 @@ namespace TimeTable
                 
                 //Read the contents of the file into a stream
                 var fileStream = openFileDialog1.OpenFile();
-                //Encoding encodingType = Encoding.GetEncoding("Windows-1250");
+                Encoding encodingType = Encoding.GetEncoding("Windows-1250");
 
-                StreamReader reader = new StreamReader(fileStream);  //encodingType 2. paraméter ha nem lenne jó a kódolás
+                StreamReader reader = new StreamReader(fileStream,encodingType);  //encodingType 2. paraméter ha nem lenne jó a kódolás
                 while (reader.Peek() >= 0)
                 {
                     fileContent.Add(reader.ReadLine());
